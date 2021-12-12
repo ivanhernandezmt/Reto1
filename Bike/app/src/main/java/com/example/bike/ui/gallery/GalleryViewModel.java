@@ -1,0 +1,19 @@
+package com.example.bike.ui.gallery;
+
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+
+public class GalleryViewModel extends ViewModel {
+
+    private MutableLiveData<String> mText;
+
+    public GalleryViewModel() {
+        mText = new MutableLiveData<>();
+        mText.setValue("bienvenido a servicios, espera nuestra proxima version con mas mejoras pensando en ti ;) ");
+    }
+
+    public LiveData<String> getText() {
+        return mText;
+    }
+}
